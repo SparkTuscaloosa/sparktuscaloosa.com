@@ -1,0 +1,25 @@
+.home-hero {
+  width: 95%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-bottom: 1px solid $medium-gray;
+  @include grid-container;
+  padding: 2rem;
+
+
+  img {
+    max-height: 100px;
+    margin: 0 auto 2rem auto;
+    display: block;
+  }
+
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  p {
+    text-align: center;
+  }
+}

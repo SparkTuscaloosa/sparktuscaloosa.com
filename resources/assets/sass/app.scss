@@ -1,9 +1,52 @@
 
-// Fonts
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+/*
+ * Bourbon Import
+ *
+ * Scss Mix-in Lib
+ * http://bourbon.io/
+ */
+@import "bourbon/bourbon";
 
-// Variables
-@import "variables";
 
-// Bootstrap
-@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+/*
+ * Neat Import
+ *
+ * A lightweight and flexible Sass grid
+ * http://neat.bourbon.io/
+ */
+@import "neat/neat";
+
+/*
+ * Base element styling
+ */
+@import "base/base";
+
+/*
+ * Component Styling
+ *
+ * Used to style base components
+ */
+@import "components/components";
+
+/*
+ * Module Styling
+ *
+ * Used to style groups of components
+ */
+@import "modules/modules";
+
+/*
+ * Region Styling
+ *
+ * Used to style sets of modules and components
+ * over parts of whole pages.
+ */
+@import "regions/regions";
+
+/*
+ * Page Styling
+ *
+ * Used to overwrite Region, Module, and Components.
+ * Also used to set up grids and spacing for pages.
+ */
+@import "pages/pages";
