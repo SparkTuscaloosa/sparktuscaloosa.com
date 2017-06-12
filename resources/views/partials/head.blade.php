@@ -11,4 +11,5 @@
     <!-- Styles -->
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
+    @include('layout.partials.analytics')
 </head>
