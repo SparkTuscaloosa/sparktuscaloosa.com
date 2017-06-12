@@ -2,6 +2,9 @@
 
 return [
 
+    // Tracking Number
+    'ga-analytics' => env('GA_ANALYTICS', null),
+
     /*
     |--------------------------------------------------------------------------
     | Application Name
