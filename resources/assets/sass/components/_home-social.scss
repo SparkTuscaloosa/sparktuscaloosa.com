@@ -1,0 +1,32 @@
+#home-social {
+  width: 95%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+
+  h3 {
+    text-align: center;
+  }
+
+  .social-links {
+    text-align: center;
+    font-size: 2rem;
+
+    a {
+      color: $blue;
+      margin: 0 0.5rem;
+
+      &:hover {
+        color: $dark-blue;
+      }
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
