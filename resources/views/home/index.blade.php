@@ -18,6 +18,7 @@
     <div id="home-social">
         <h3>Social</h3>
         <div class="social-links">
+            <a href="https://www.meetup.com/Spark-Tuscaloosa/" target="_blank"><i class="fa fa-meetup" aria-hidden="true"></i></a>
             <a href="https://twitter.com/sparktuscaloosa" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
             <a href="https://www.facebook.com/sparktuscaloosa/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
             <a href="https://www.instagram.com/sparktuscaloosa/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
