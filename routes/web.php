@@ -11,4 +11,6 @@
 |
 */
 
-Route::get('/', ['uses' => 'HomeController@index', 'as' => 'home']);
+Route::get('/', 'HomeController@index')->name('home');
+
+Route::post('/', 'NewsletterController@signup')->name('newsletter');

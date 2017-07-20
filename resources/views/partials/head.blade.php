@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
     <!-- Styles -->
+
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
     @include('layout.partials.analytics')
