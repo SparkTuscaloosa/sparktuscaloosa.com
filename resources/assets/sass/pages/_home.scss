@@ -1,0 +1,86 @@
+.home-mission {
+  width: 95%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+
+  h3 {
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+}
+
+.home-newsletter {
+  width: 95%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+
+  h3 {
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  #newsletterGroup {
+      width: 100%;
+
+      div {
+          display: inline-block;
+      }
+  }
+
+  #newsletterEmail {
+      margin-left: 20%;
+      width: 40%;
+  }
+
+  #newsletterBtn {
+      width: 20%;
+
+      button {
+          text-align: center;
+          width: 100%;
+      }
+  }
+
+  @media only screen and (max-width: 800px) {
+      #newsletterEmail {
+          margin-left: 10%;
+          width: 50%;
+      }
+
+      #newsletterBtn {
+          width: 30%;
+
+          button {
+              text-align: center;
+              width: 100%;
+          }
+      }
+  }
+  @media only screen and (max-width: 600px) {
+      #newsletterEmail {
+          display: block;
+          margin-left: 10%;
+          width: 80%;
+      }
+
+      #newsletterBtn {
+          display: block;
+          margin-left: 25%;
+          width: 50%;
+
+          button {
+              text-align: center;
+              width: 100%;
+          }
+      }
+  }
+
+}

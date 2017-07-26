@@ -11,6 +11,12 @@ const { mix } = require('laravel-mix');
  |
  */
 
-mix.js('resources/assets/js/app.js', 'public/js')
+mix.js(
+    [
+        'resources/assets/js/app.js',
+        'resources/assets/js/fullCalendar/fullcalendar.min.js',
+        'resources/assets/js/fullCalendar/gcal.min.js',
+        'resources/assets/js/functions.js',
+    ], 'public/js')
    .sass('resources/assets/sass/app.scss', 'public/css')
     .copy('node_modules/font-awesome/fonts/', 'public/fonts');
