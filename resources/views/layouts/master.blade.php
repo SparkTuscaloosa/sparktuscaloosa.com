@@ -10,8 +10,7 @@
         <title>Spark Tuscaloosa</title>
 
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-
+        <link href="https://fonts.googleapis.com/css?family=Khula:300,400|Open+Sans:300,400" rel="stylesheet">
         <!-- Styles -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.css">
 

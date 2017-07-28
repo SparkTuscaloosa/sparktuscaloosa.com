@@ -1,38 +1,17 @@
-.home-mission {
-  width: 95%;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 1rem;
-
-  h3 {
-    text-align: center;
-  }
-
-  p {
-    text-align: center;
-  }
-}
 
 .home-newsletter {
-  width: 95%;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 1rem;
-
-  h3 {
-    text-align: center;
-  }
-
-  p {
-    text-align: center;
-  }
-
   #newsletterGroup {
       width: 100%;
 
       div {
           display: inline-block;
       }
+  }
+
+  h5 {
+      text-align: center;
+      font-size: 2rem;
+      margin: 4rem 0 1.25rem 0;
   }
 
   #newsletterEmail {

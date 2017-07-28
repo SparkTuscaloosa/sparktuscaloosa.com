@@ -4,7 +4,7 @@ $large-screen: 900px;
 
 // Typography
 $base-font-family: 'Open Sans', sans-serif;
-$heading-font-family: $base-font-family;
+$heading-font-family: 'Khula', sans-serif;
 
 // Line height
 $base-line-height: 1.5;
@@ -23,8 +23,12 @@ $dark-gray: #333;
 $medium-gray: #999;
 $light-gray: #ddd;
 
+$primary-red: #e24f40;
+$primary-purple: #536dd6;
+$primary-green: #00cc8b;
+
 // Font Colors
-$base-font-color: $dark-gray;
+$base-font-color: #515151;
 $action-color: $blue;
 
 // Border
@@ -44,3 +48,8 @@ $focus-outline-offset: 2px;
 // Animations
 $base-duration: 150ms;
 $base-timing: ease;
+
+
+// Containers
+$container-width: 1000px;
+$container-max-width: 90%;

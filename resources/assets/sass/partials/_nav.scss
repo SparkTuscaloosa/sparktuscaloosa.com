@@ -1,49 +1,106 @@
 /* Add a black background color to the top navigation */
+// #navBar {
+//     background-color: $blue;
+//     overflow: hidden;
+
+//     a {
+//         float: left;
+//         display: block;
+//         color: #fff;
+//         text-align: center;
+//         padding: 8px 16px;
+//         text-decoration: none;
+//     }
+
+//     a:hover {
+//         background-color: shade($blue, 20%);
+//         color: #fff;
+//     }
+
+//     .icon {
+//         cursor: pointer;
+//         display: none;
+//     }
+
+//     @media screen and (max-width: 600px) {
+//       a:not(:first-child) {display: none;}
+//       a.icon {
+//         float: right;
+//         display: block;
+//       }
+//     }
+// }
+
+// @media screen and (max-width: 600px) {
+//     #navBar.responsive {
+//         position: relative;
+
+//         a.icon {
+//           position: absolute;
+//           right: 0;
+//           top: 0;
+//         }
+//         a {
+//           float: none;
+//           display: block;
+//           text-align: left;
+//         }
+//     }
+// }
+
 #navBar {
-    background-color: $blue;
-    overflow: hidden;
+    background-color: white;
 
-    a {
-        float: left;
-        display: block;
-        color: #fff;
-        text-align: center;
-        padding: 8px 16px;
-        text-decoration: none;
+    .nav-wrapper {
+        padding: 1.5rem 0;
+        width: $container-width;
+        max-width: $container-max-width;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
     }
 
-    a:hover {
-        background-color: shade($blue, 20%);
-        color: #fff;
-    }
-
-    .icon {
-        cursor: pointer;
-        display: none;
-    }
-
-    @media screen and (max-width: 600px) {
-      a:not(:first-child) {display: none;}
-      a.icon {
-        float: right;
-        display: block;
-      }
-    }
-}
-
-@media screen and (max-width: 600px) {
-    #navBar.responsive {
-        position: relative;
-
-        a.icon {
-          position: absolute;
-          right: 0;
-          top: 0;
+    .brand {
+        width: 30%;
+        display: flex;
+         flex-direction: row;
+         flex-wrap: nowrap;
+         align-items: center;
+        img {
+            max-height: 45px;
         }
+
+        h1 {
+            font-size: 1.5rem;
+            padding-left: 0.75rem;
+            display: initial;
+            margin: 0;
+            color: $primary-green;
+        }
+    }
+
+    .links {
+        width: 70%;
+        text-align: right;
+        
+        font-size: 1.1rem;
+
         a {
-          float: none;
-          display: block;
-          text-align: left;
+            text-decoration: none;
+            margin-left: 0.75rem;
+            color: $primary-purple;
+
+
+            &:hover {
+                text-decoration: underline;
+            }
         }
+    }
+
+    #toggleNav {
+        display: none;
     }
 }

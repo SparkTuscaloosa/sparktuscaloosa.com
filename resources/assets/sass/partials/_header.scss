@@ -1,22 +1,29 @@
 header {
-  width: 95%;
-  max-width: 800px;
+  width: $container-max-width;
+  max-width: $container-width;
+
   margin: 0 auto;
-  border-bottom: 1px solid $medium-gray;
+  border-bottom: 1px solid $primary-red;
   @include grid-container;
+  padding: 1rem;
+  padding-bottom: 3rem;
 
   img {
-    max-height: 100px;
-    margin: 0 auto 2rem auto;
+    height: auto;
+    max-width: 350px;
+    margin: 0 auto 1rem auto;
     display: block;
   }
   h1 {
-    font-size: 3rem;
+    margin: 1.5rem 0 0.5rem 0; 
+    font-size: 4rem;
     text-align: center;
-    margin-bottom: 10px;
   }
 
   p {
+    font-size: 1.75rem;
+    font-weight: 300;
+    //color: $primary-red;
     text-align: center;
   }
 }

@@ -1,32 +1,83 @@
 footer {
-  width: 100%;
-  height: 50px;
+  width: $container-width;
+  max-width: $container-max-width;
+  margin: 0 auto;
+  overflow: auto;
+  border-top: 1px solid $primary-red;
 
-  .social-links {
-    text-align: center;
-    font-size: 2rem;
-    background: $blue;
+  .top {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-items: top;
+      padding: 2rem 0;
 
-    a {
-      color: white;
-      margin: 0 0.5rem;
 
-      &:hover {
-        color: $light-gray;
+      .branding {
+
+        .logo {
+          display: block;
+          img {
+            margin: 0 auto;
+            max-width: 200px;
+            display: block;
+          }
+        }
+
+        h1 {
+            margin-top: 2rem;
+            font-size: 2.25rem;
+            text-align: center;
+            color: $primary-green;
+          }
+
       }
 
-      &:first-child {
-        margin-left: 0;
-      }
+      .section {
+        padding: 0.5rem;
+        flex-grow: 2;
+        margin: 1rem;
 
-      &:last-child {
-        margin-right: 0;
+        &.site-links {
+          .links {
+            a {
+              display: block;
+              text-align: left;
+              text-decoration: none;
+              font-size: 1.25rem;
+              color: $base-font-color;
+
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+
+        &.social-links {
+
+          flex-grow: 1;
+          .links {
+            a {
+              font-size: 2rem;
+              margin: 0.25rem;
+            }
+          }
+        }
+
+        h3 {
+          font-size: 1.75rem;
+          padding: 0.1rem;
+          border-bottom: 1px solid $primary-purple;
+        }
       }
-    }
   }
 
-  .footerBar {
-      height: 10px;
-      background: $blue;
+  .copy-right {
+    padding: 0.75rem;
+    justify-content: flex-start;
+    text-align: center;
+    border-top: 1px solid $primary-green
   }
 }
