@@ -1,0 +1,23 @@
+.content {
+
+    padding: 6rem 0;
+    width: $container-width;
+    max-width: $container-max-width;
+    margin: 0 auto;
+    overflow: auto;
+    border-bottom: 1px solid $primary-red;
+
+    h3 {
+        text-align: left;
+        font-size: 2rem;
+    }
+
+    p {
+        text-align: left;
+        font-size: 1.1rem;
+    }
+
+    &:last-child {
+        border-bottom: none;
+    }
+}
