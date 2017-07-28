@@ -1,23 +1,18 @@
-#home-social {
-  width: 95%;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 1rem;
-
-  h3 {
-    text-align: center;
-  }
+footer {
+  width: 100%;
+  height: 50px;
 
   .social-links {
     text-align: center;
     font-size: 2rem;
+    background: $blue;
 
     a {
-      color: $blue;
+      color: white;
       margin: 0 0.5rem;
 
       &:hover {
-        color: $dark-blue;
+        color: $light-gray;
       }
 
       &:first-child {
@@ -28,5 +23,10 @@
         margin-right: 0;
       }
     }
+  }
+
+  .footerBar {
+      height: 10px;
+      background: $blue;
   }
 }

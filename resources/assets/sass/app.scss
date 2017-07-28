@@ -27,31 +27,15 @@
 @import "base/base";
 
 /*
- * Component Styling
+ * Partial Styling
  *
- * Used to style base components
+ * All the Styles for the various partials
  */
-@import "components/components";
-
-/*
- * Module Styling
- *
- * Used to style groups of components
- */
-@import "modules/modules";
-
-/*
- * Region Styling
- *
- * Used to style sets of modules and components
- * over parts of whole pages.
- */
-@import "regions/regions";
+@import "partials/partials";
 
 /*
  * Page Styling
  *
- * Used to overwrite Region, Module, and Components.
- * Also used to set up grids and spacing for pages.
+ * Used to set the page-specific styles
  */
 @import "pages/pages";
