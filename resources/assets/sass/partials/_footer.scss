@@ -3,7 +3,7 @@ footer {
   max-width: $container-max-width;
   margin: 0 auto;
   overflow: auto;
-  border-top: 1px solid $primary-red;
+  border-top: 1px solid $primary-green;
 
   .top {
       display: flex;
@@ -29,7 +29,7 @@ footer {
             margin-top: 2rem;
             font-size: 2.25rem;
             text-align: center;
-            color: $primary-green;
+            color: $primary-blue;
           }
 
       }
