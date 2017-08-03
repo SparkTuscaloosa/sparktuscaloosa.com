@@ -2,3 +2,11 @@
     background-color: $primary-blue;
     border-color: shade($primary-blue, 20%);
 }
+#eventModalDate, #eventModalDescription {
+    text-align: center;
+}
+
+#eventModalLocation {
+    width: 80%;
+    margin-left: 10%;
+}

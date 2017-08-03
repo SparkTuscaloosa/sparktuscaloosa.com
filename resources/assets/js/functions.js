@@ -9,9 +9,13 @@ $(document).ready(function() {
             }
         ],
         eventClick: function(e) {
+            console.log(e);
+            var map = "https://www.google.com/maps/embed/v1/place?q="+ e.location +"&key=AIzaSyAOiQbEnMGi86XD4-J7uIl7DI1Nby5gw4k";
+
             $("#eventModalTitle").text(e.title);
-            $("#eventModalStart").text(moment(e.start).format('MMM Do h:mm A'));
-            $("#eventModalEnd").text(moment(e.end).format('MMM Do h:mm A'));
+            $("#eventModalDate").text(moment(e.start).format('MMM Do h:mm A') + " - " + moment(e.end).format('h:mm A'));
+            $("#eventModalLocation").attr("src", map);
+            $("#eventModalDescription").html(e.description);
             $("#eventModal").show();
             if(e.url) {
                 return false;
