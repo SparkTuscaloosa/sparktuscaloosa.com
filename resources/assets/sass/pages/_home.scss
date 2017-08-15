@@ -1,10 +1,10 @@
 
-.home-newsletter {
-  #newsletterGroup {
+.home-newsletter, .home-slack {
+  #newsletterGroup, #slackSignupGroup {
       width: 100%;
 
       div {
-          display: inline-block;
+          display: inline-flex;
       }
   }
 
@@ -14,12 +14,12 @@
       margin: 4rem 0 1.25rem 0;
   }
 
-  #newsletterEmail {
+  #newsletterEmail, #slackEmail {
       margin-left: 20%;
       width: 40%;
   }
 
-  #newsletterBtn {
+  #newsletterBtn, #slackBtn {
       width: 20%;
 
       button {
@@ -28,13 +28,28 @@
       }
   }
 
-  @media only screen and (max-width: 800px) {
-      #newsletterEmail {
+  @media only screen and (max-width: 1200px) {
+      #newsletterEmail, #slackEmail {
+          margin-left: 15%;
+          width: 45%;
+      }
+
+      #newsletterBtn, #slackBtn {
+          width: 25%;
+
+          button {
+              text-align: center;
+              width: 100%;
+          }
+      }
+  }
+  @media only screen and (max-width: 1000px) {
+      #newsletterEmail, #slackEmail {
           margin-left: 10%;
           width: 50%;
       }
 
-      #newsletterBtn {
+      #newsletterBtn, #slackBtn {
           width: 30%;
 
           button {
@@ -43,17 +58,17 @@
           }
       }
   }
-  @media only screen and (max-width: 600px) {
-      #newsletterEmail {
+  @media only screen and (max-width: 800px) {
+      #newsletterEmail, #slackEmail {
           display: block;
           margin-left: 10%;
           width: 80%;
       }
 
-      #newsletterBtn {
+      #newsletterBtn, #slackBtn {
           display: block;
-          margin-left: 25%;
-          width: 50%;
+          margin-left: 10%;
+          width: 80%;
 
           button {
               text-align: center;

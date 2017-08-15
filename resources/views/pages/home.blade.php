@@ -40,4 +40,21 @@
             </div>
         </form>
     </div>
+    <div class="home-slack content">
+        <h3>We have a Slack!</h3>
+        <p>
+            Join our Slack channel by entering you email below to get an invite!
+        </p>
+        <form onsubmit="return false;"  method="post">
+            {!! csrf_field() !!}
+            <div id="slackSignupGroup">
+                <div id="slackEmail">
+                    <input type="email" name="email" id="email" placeholder="Email">
+                </div>
+                <div id="slackBtn">
+                    <button type="submit">Send That Invite!</button>
+                </div>
+            </div>
+        </form>
+    </div>
 @endsection
