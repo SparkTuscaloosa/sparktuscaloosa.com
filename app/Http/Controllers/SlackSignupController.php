@@ -14,7 +14,8 @@ class SlackSignupController extends Controller
         );
 
         $url = 'https://sparktuscaloosa.slack.com/api/users.admin.invite';
-        $myvars = 'email='.$request->email.'&token=xoxp-3880484383-226602205045-226670521380-c5e88994f6f7bfa831726066590c7970';
+        $myvars = 'email='.$request->email.'&token='.env('SLACK_BOT_TOKEN');
+
 
         $ch = curl_init( $url );
         curl_setopt( $ch, CURLOPT_POST, 1);
