@@ -15,6 +15,11 @@
             <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
             {{ Session::get('success') }}
         </div>
+    @elseif (Session::has('danger'))
+      <div class="alert alert-danger">
+          <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+          {{ Session::get('danger') }}
+      </div>
     @endif
     <div class="home-mission content">
         <h3>Our Mission</h3>
@@ -45,7 +50,7 @@
         <p>
             Join our Slack channel by entering you email below to get an invite!
         </p>
-        <form onsubmit="return false;"  method="post">
+        <form action={{ route("slack") }} method="post">
             {!! csrf_field() !!}
             <div id="slackSignupGroup">
                 <div id="slackEmail">

@@ -32,22 +32,4 @@ $(document).ready(function() {
 		e.preventDefault();
 		$(this).parent().toggleClass('responsive');
 	});
-
-  $("#slackBtn").click(function(e) {
-    e.preventDefault();
-    var email = $("#slackEmail #email").val();
-    var slackSubdomain = "sparktuscaloosa";
-    var slackBotToken = "xoxp-3880484383-226602205045-226670521380-c5e88994f6f7bfa831726066590c7970";
-
-    var data = {email: email, token: slackBotToken }
-
-    $.ajax({
-      type:"POST",
-      url:"https://" + slackSubdomain + ".slack.com/api/users.admin.invite",
-      data: data,
-      success: function (html) {
-        console.log(html);
-      }
-    });
-  });
 });
