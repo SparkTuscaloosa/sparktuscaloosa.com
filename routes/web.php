@@ -11,7 +11,9 @@
 |
 */
 // Routes for various POST requests
-Route::post('/', 'NewsletterController@signup')->name('newsletter');
+Route::post('/newsletter', 'NewsletterController@signup')->name('newsletter');
+Route::post('/slack', 'SlackSignupController@signup')->name('slack');
+
 
 // Routes that just return views
 Route::get('/', function() {
