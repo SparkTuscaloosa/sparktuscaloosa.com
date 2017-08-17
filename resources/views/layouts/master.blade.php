@@ -9,6 +9,9 @@
 
         <title>Spark Tuscaloosa</title>
 
+
+        <link rel="icon" href="{{ asset('images/favicon.ico') }}" type="image/x-icon"/>
+        <link rel="shortcut icon" href="{{ asset('images/favicon.ico') }}" type="image/x-icon"/>
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Khula:300,400|Open+Sans:300,400" rel="stylesheet">
         <!-- Styles -->
